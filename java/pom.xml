@@ -26,6 +26,21 @@
                 <artifactId>maven-project-info-reports-plugin</artifactId>
                 <version>3.1.2</version>
             </plugin>
+            <plugin>
+                <!-- Build an executable JAR -->
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jar-plugin</artifactId>
+                <version>3.1.0</version>
+                <configuration>
+                <archive>
+                    <manifest>
+                    <addClasspath>true</addClasspath>
+                    <classpathPrefix>lib/</classpathPrefix>
+                    <mainClass>edu.cmu.cs.cs214.lab02.Main</mainClass>
+                    </manifest>
+                </archive>
+                </configuration>
+            </plugin>
         </plugins>
         <pluginManagement>
             <!-- Upgrade default checkstyle version to allow for Java 14+ features. -->
