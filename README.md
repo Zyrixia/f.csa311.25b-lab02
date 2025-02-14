@@ -1,1 +1,1 @@
-Зааврыг Teams дээрээс үзээрэй.
+lab project for encapsulation
